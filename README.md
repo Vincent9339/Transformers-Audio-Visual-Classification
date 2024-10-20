@@ -1,6 +1,6 @@
 ## Transformers Model for Audio/Visual Data Classification
 
-This repository hosts a **Transformers-based model** for classifying musical instruments from audio and visual data, built using **Timm** and **PyTorch**. The project is inspired by and based on the paper *"Contrastive Audio-Visual Masked Autoencoder"* by **Gong et al. (2022)**. All credit for the underlying concepts and methodologies goes to this work. You can access the original paper here: [arXiv preprint arXiv:2210.07839](https://arxiv.org/abs/2210.07839).
+This repository hosts a **Transformers-based model** for classifying musical instruments from audio and visual data, built using **Timm** and **PyTorch**. The project is inspired by and based on the paper *"Contrastive Audio-Visual Masked Autoencoder"* by **Gong et al. (2022)** and many more. All credit for the underlying concepts and methodologies goes to these works. You can access the main original paper here: [arXiv preprint arXiv:2210.07839](https://arxiv.org/abs/2210.07839).
 
 
 
