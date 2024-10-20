@@ -1,0 +1,34 @@
+{
+ "data": [
+  {
+   "video_id": "Sux2UJ-bUjk_000004",
+   "wav": "/sample_audio/Sux2UJ-bUjk_000004.wav",
+   "video_path": "/sample_frames",
+   "label": "steel_guitar"
+  },
+  {
+   "video_id": "Sz9WOiEQ81c_000270",
+   "wav": "/sample_audio/Sz9WOiEQ81c_000270.wav",
+   "video_path": "/sample_frames",
+   "label": "flute"
+  },
+  {
+   "video_id": "TCxhdBYCcSo_000127",
+   "wav": "/sample_audio/TCxhdBYCcSo_000127.wav",
+   "video_path": "/sample_frames",
+   "label": "didgeridoo"
+  },
+  {
+   "video_id": "TOjkzdLprPY_000209",
+   "wav": "/sample_audio/TOjkzdLprPY_000209.wav",
+   "video_path": "/sample_frames",
+   "label": "trombone"
+  },
+  {
+   "video_id": "fTgYZb_80lU_000096",
+   "wav": "/sample_audio/fTgYZb_80lU_000096.wav",
+   "video_path": "/sample_frames",
+   "label": "hammond_organ"
+  }
+ ]
+}

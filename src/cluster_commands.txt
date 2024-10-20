@@ -1,0 +1,37 @@
+ssh -vvv viaj@hpc.itu.dk
+ssh -o ServerAliveInterval=900 -vvv viaj@hpc.itu.dk
+
+###################################################### HPC ######################################################
+##########################################     ##########################################
+
+srun --nodes=1 --ntasks-per-node=1 --partition=brown --gres=gpu --time=2:00:00  --pty bash -i
+					srun --nodes=1 --ntasks-per-node=1 --partition=red --gres=gpu --time=1:00:00  --pty bash -i
+
+
+##########################################     ##########################################
+###################################################### HPC ######################################################
+
+ssh -o ServerAliveInterval=900 -vvv viaj@hpc.itu.dk
+
+to cluster:
+
+	sshpass -p '' scp -r /mnt/g/My Drive/Thesis/src/CAVMAE.py viaj@hpc.itu.dk:/home/viaj/project/src
+	sshpass -p '' scp -r /home/vin/Documents/run_esc.sh viaj@hpc.itu.dk:/home/viaj/ast_git_test/ast/src/
+	sshpass -p '' scp -r /home/vin/Documents/git_test/ast/egs/esc50/data/ESC-50-master/audio_16k/ viaj@hpc.itu.dk:/home/viaj/ast_git_test/ast/egs/esc50/data/ESC-50-master/
+	sshpass -p '' scp -r /home/vin/Documents/ITU/thesis/data/vgg/preprocessed/accordion/audio/ viaj@hpc.itu.dk:/home/viaj/project/data/audio
+	sshpass -p '' scp -r /home/vin/Documents/from_cluster/tmp/ viaj@hpc.itu.dk:/home/viaj/project/data/audio/audio/
+	sshpass -p '' scp -r /home/vin/Documents/CAVMAE.py viaj@hpc.itu.dk:/home/viaj/project/src
+	sshpass -p '' scp -r /home/vin/Documents/data1.json viaj@hpc.itu.dk:/home/viaj/project/data/vgg/
+	sshpass -p '' scp -rqo LogLevel=QUIET /home/vin/Documents/train_test.py viaj@hpc.itu.dk:/home/viaj/project/data/audio
+	sshpass -p '' scp -r /home/vin/Documents/deleteme/audio_1.pkl viaj@hpc.itu.dk:/home/viaj/project/data/vgg/audio
+	sshpass -p '' scp -r /home/vin/Documents/vgg_eval_data_1.json viaj@hpc.itu.dk:/home/viaj/project/data/vgg/data_fold_json/
+	sshpass -p '' scp -r /home/vin/Documents/vgg_class.csv viaj@hpc.itu.dk:/home/viaj/ast_git_test/ast/egs/esc50/data
+from cluster:
+	sshpass -p '' scp -r viaj@hpc.itu.dk:/home/viaj/project/src/result.csv /home/vin/Documents/from_cluster/
+	sshpass -p '' scp -r viaj@hpc.itu.dk:/home/viaj/project/src/models /home/vin/Documents/from_cluster/models
+	sshpass -p '' scp -r viaj@hpc.itu.dk:/home/viaj/project/data/vgg/data.json /home/vin/Documents/from_cluster/
+	sshpass -p '' scp -r viaj@hpc.itu.dk:/home/viaj/ast_git_test/ast/src/traintest.py /home/vin/Documents/
+
+squeue -u viaj
+
+
