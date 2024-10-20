@@ -43,7 +43,7 @@ with open(vgg_csv_path, 'r', newline='') as csv_file:
             try:
                 aud = make_features(final_dest+aud_id+'.wav')
                 torch.save(aud, '/home/vin/Documents/'+aud_id+'.pt')
-                os.system("sshpass -p 'Aaaaaaaa22' scp -rqo LogLevel=QUIET /home/vin/Documents/"+aud_id+'.pt' + " viaj@hpc.itu.dk:/home/viaj/project/data/vgg/audio")
+                os.system("sshpass -p '' scp -rqo LogLevel=QUIET /home/vin/Documents/"+aud_id+'.pt' + " viaj@hpc.itu.dk:/home/viaj/project/data/vgg/audio")
                 os.system("rm /home/vin/Documents/"+aud_id+".pt")
             except:
                 error_num+=1

@@ -19,7 +19,7 @@ with open(vgg_csv_path, 'r', newline='') as csv_file:
 
             try:
                 if vid_id+'.pkl' in os.listdir(final_dest):    
-                    os.system("sshpass -p 'Aaaaaaaa22' scp -rqo LogLevel=QUIET " +final_dest+vid_id+".pkl" + " viaj@hpc.itu.dk:/home/viaj/project/data/vgg/video")
+                    os.system("sshpass -p '' scp -rqo LogLevel=QUIET " +final_dest+vid_id+".pkl" + " viaj@hpc.itu.dk:/home/viaj/project/data/vgg/video")
                     
             except:
                 error_num+=1
